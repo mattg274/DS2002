@@ -32,8 +32,7 @@ CREATE TABLE Customers (
 	FirstName VARCHAR(100), 
 	LastName VARCHAR(100) );
 
-CREATE TABLE Orders ( 
-	OrderID INT PRIMARY KEY AUTO_INCREMENT, 
+CREATE TABLE Orders (  
 	CustomerID INT, ProductID INT, 
 	FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID), 
 	FOREIGN KEY (ProductID) REFERENCES Products(ProductID) );
