@@ -39,10 +39,10 @@ top_assist = minutes_df.loc[minutes_df['Unnamed: 8'].idxmax()]
 print(top_assist[['Unnamed: 1','Unnamed: 8']])
 #%%
 # who are the top 3 assist leaders?
-top_3_assists = minutes_df.sort_values(by='Unnamed: 8', ascending=False).head(3)
+top_3_assists = accdf.sort_values(by='Unnamed: 8', ascending=False).head(3)
 #%%
 # Who are top 3 shot blocker
-minutes_df.loc[:, 'Unnamed: 10'] = pd.to_numeric(minutes_df['Unnamed: 10'], errors='coerce')
+accdf.loc[:, 'Unnamed: 10'] = pd.to_numeric(minutes_df['Unnamed: 10'], errors='coerce')
 top_3_blockers = minutes_df.sort_values(by='Unnamed: 10', ascending=False).head(3)
 #%%
 # 4a
