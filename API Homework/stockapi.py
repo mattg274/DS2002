@@ -16,7 +16,7 @@ stock=input("Enter Ticker Symbol")
 
 print("The Stock we will research is:" + stock)
 
-apikey = "V6jtEl001x4kusRzDLaQU3aYmTYi5fSz9d1E50sZ"
+apikey = "X"
 
 url_1 = "https://yfapi.net/v6/finance/quote"
 querystring = {"symbols": stock}
